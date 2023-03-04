@@ -1,0 +1,48 @@
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 75px 0;
+  background: $color-white-60;
+
+  h1 {
+    font-weight: 600;
+    font-size: 25.6px;
+    line-height: 31px;
+    color: $color-black-50;
+  }
+
+  p {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 12.8px;
+    line-height: 16px;
+    color: $color-black-50;
+  }
+
+  &-content{
+    margin-top: 61px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 23px;
+
+    img{
+      max-width: 310px;
+      width: 100%;
+      transition: .6s all;
+
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .images{
+    padding: 40px;
+  }
+}

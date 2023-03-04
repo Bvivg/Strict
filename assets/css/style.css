@@ -1,0 +1,358 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: #FFFFFF;
+  z-index: 999;
+}
+.header-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header-content a {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.header-content a span {
+  font-weight: 600;
+  font-size: 25.6px;
+  line-height: 31px;
+  color: #151D32;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 920px) {
+  .header-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+.banner {
+  background: url("../img/image/banner-bg.png") no-repeat, linear-gradient(0deg, rgba(21, 29, 50, 0.7), rgba(21, 29, 50, 0.7));
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.banner-content {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.banner-content h1 {
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 97.28px;
+  line-height: 119px;
+  color: #FFFFFF;
+}
+.banner-content__line {
+  margin-top: 5px;
+  max-width: 486px;
+  height: 2px;
+  width: 100%;
+  background: #16A7F6;
+  border-radius: 64px;
+}
+.banner-content p {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 15.36px;
+  line-height: 19px;
+  color: #AEAEAE;
+}
+.banner-content a {
+  margin-top: 45px;
+  padding: 15px 42px;
+  border: 1px solid #16A7F6;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15.36px;
+  line-height: 19px;
+  color: #FFFFFF;
+  transition: 0.6s all;
+}
+.banner-content a:hover {
+  background: #16A7F6;
+}
+.banner-content__icon {
+  margin-top: auto;
+  margin-bottom: 30px;
+  animation: svg 1s ease alternate infinite;
+}
+@keyframes svg {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .banner {
+    min-height: 80vh;
+  }
+  .banner-content {
+    min-height: 80vh;
+  }
+  .banner-content h1 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .banner {
+    min-height: 60vh;
+  }
+  .banner-content {
+    min-height: 60vh;
+  }
+  .banner-content h1 {
+    font-size: 50px;
+  }
+  .banner-content p {
+    font-size: 12px;
+  }
+  .banner-content a {
+    font-size: 12px;
+  }
+}
+.description {
+  padding: 64px 0 84px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 13px;
+  background: #F7F9F8;
+}
+.description h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28.16px;
+  line-height: 34px;
+  color: #000000;
+}
+.description p {
+  text-align: center;
+  max-width: 890px;
+  font-weight: 400;
+  font-size: 20.48px;
+  line-height: 25px;
+  color: #9B9B9B;
+}
+
+@media screen and (max-width: 920px) {
+  .description {
+    padding: 40px;
+  }
+}
+.cards {
+  padding: 45px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  max-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+.card h1 {
+  font-weight: 600;
+  font-size: 20.48px;
+  line-height: 25px;
+  color: #000000;
+}
+.card p {
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 16px;
+  color: #9B9B9B;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 75px 0;
+  background: #F7F9F8;
+}
+.images h1 {
+  font-weight: 600;
+  font-size: 25.6px;
+  line-height: 31px;
+  color: #000000;
+}
+.images p {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 12.8px;
+  line-height: 16px;
+  color: #000000;
+}
+.images-content {
+  margin-top: 61px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+.images-content img {
+  max-width: 310px;
+  width: 100%;
+  transition: 0.6s all;
+}
+.images-content img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 920px) {
+  .images {
+    padding: 40px;
+  }
+}
+.join {
+  background: url("../img/image/banner-bg.png") no-repeat, rgba(21, 29, 50, 0.9);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.join-content {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.join-content h1 {
+  font-weight: 600;
+  font-size: 25.6px;
+  line-height: 31px;
+  color: #FFFFFF;
+}
+.join-content p {
+  margin-top: 13px;
+  font-weight: 600;
+  font-size: 15.36px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.join-content__inputs {
+  margin-top: 40px;
+  max-width: 448px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.join-content__inputs input {
+  width: 100%;
+  padding: 20px 30px;
+  border: 2.56px solid #56606C;
+  border-radius: 5.12px;
+  color: #FFFFFF;
+}
+.join-content__inputs-textarea {
+  width: 100%;
+  border: 2.56px solid #56606C;
+  border-radius: 5.12px;
+  height: 130px;
+}
+.join-content__inputs a {
+  width: 100%;
+  padding: 19px 28px;
+  border: 1.28px solid #12A3FC;
+  border-radius: 5.12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 10.24px;
+  line-height: 12px;
+  color: #FFFFFF;
+  transition: 0.6s all;
+}
+.join-content__inputs a:hover {
+  background: #12A3FC;
+}
+
+@media screen and (max-width: 920px) {
+  .join {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+.copyright {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.copyright p {
+  font-weight: 600;
+  font-size: 10.24px;
+  line-height: 12px;
+  color: #C9C9C9;
+}
+.copyright-links {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+@media screen and (max-width: 920px) {
+  .copyright {
+    padding: 30px 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

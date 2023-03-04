@@ -1,0 +1,32 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: $color-white-50;
+  z-index: 999;
+
+  &-content {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      span {
+        font-weight: 600;
+        font-size: 25.6px;
+        line-height: 31px;
+        color: $color-dark-blue-800;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .header-content{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
